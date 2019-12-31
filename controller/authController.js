@@ -79,7 +79,6 @@ module.exports = {
                 return;
             }
             console.log(result);
-            // res.send({jwt:result.generateJwtToken(result._id)});
             res.redirect('/transaction');
         });
     },
@@ -110,7 +109,7 @@ module.exports = {
                      <p>Amount to be debited  (in Rs.)${req.body.amount}</p>
                      <p>Purpose : ${req.body.purpose}</p>
                      <p>Required Account No. : ${req.body.accid}</p> 
-                     <p>Click the link if you want to allow <a href="http://www.google.com">http://www.google.com</a></p>
+                     <p>Click the link if you want to allow <a href="">http://www.google.com</a></p>
                      <p>If you want to allow <a href="http://yahoo.com">http://yahoo.com</a></p>`// plain text body
                   }
                   transporter.sendMail(mailOptions, function (err, info) {
@@ -126,7 +125,6 @@ module.exports = {
         if (req.body.amount < 50000) {
             
         }
-
         else if (req.body.amount >= 50000 && req.body.amount < 200000){
         }
         else if(req.body.amount >= 200000){

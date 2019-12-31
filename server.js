@@ -29,7 +29,6 @@ app.get('/transaction', (req,res) => {
 
 app.post('/register', authController.register);
 app.post('/login', authController.login);
-// app.get('/users/:id',checkToken, userController.getUser);
 app.post('/transaction', authController.transact);
 
 app.listen(constants.PORT, () => {
