@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>COMPANY NAME</h1>
+    <form action = "/transaction" method = "POST">
+        <div>
+            <label for = "corpid">Corporate ID</label>
+            <input type = "text" id="corpid" name="corpid" required>
+        </div>
+        <div>
+            <label for = "purpose">Purpose</label>
+            <input type = "text" id="corpid" name="purpose" required>
+        </div>
+        <div>
+            <label for = "amount">Amount</label>
+            <input type = "text" id="amount" name="amount" required>
+        </div>
+        <div>
+            <label for = "accid">Account ID of reciever</label>
+            <input type = "text" id="accid" name="accid" required>
+        </div>
+        <div>
+            <label for = "ifsc">IFSC</label>
+            <input type = "text" id="ifsc" name="ifsc" required>
+        </div>        
+        <button type="submit">Send Request</button>
+    </form>
+</body>
+</html>
